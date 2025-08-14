@@ -1,0 +1,21 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "proxy2": "ory proxy --no-jwt --port 7000 http://localhost:4000/",
+    "proxy": "ory tunnel --dev --project nifty-knuth-yavpgez97o http://localhost:7000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ory/cli": "^1.0.0-alpha.2",
+    "@ory/client": "^1.15.0",
+    "@ory/kratos-client": "^1.2.1",
+    "express": "^4.21.0"
+  }
+}
